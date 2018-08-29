@@ -18,7 +18,7 @@ let checked = document.querySelector("#checker")
 let button = document.querySelector("button")
 
 button.addEventListener("click", function(e){
-  let string = input.innerHTML;
+  let string = input.value;
 
   deadWords.forEach(function(a){
            string = string.split(RegExp("\\b"+a+"\\b","i")).join("<mark>"+a+"</mark>");

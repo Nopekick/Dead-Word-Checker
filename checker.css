@@ -6,17 +6,15 @@ body {
 
 .container {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   height: 89vh;
 }
 
-div[contenteditable=true] {
-  width: 35%;
+#input, #checker {
   outline: none;
   height: 600px;
-  min-width: 500px;
+  width: 475px;
   resize: none;
   border: 3px solid black;
   margin-bottom: 1vh;
@@ -46,10 +44,6 @@ button:active{
   align-items: center;
 }
 
-h1 {
-  color: white;
-}
-
 .box {
   display: flex;
   flex-wrap: nowrap;
@@ -63,7 +57,21 @@ h1 {
   height: 10vh;
   background-color: #2659ad;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+  color: white;
+}
+
+@media (max-width: 970px){
+  .container{
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px){
+  span {
+    display: none;
+  }
 }
