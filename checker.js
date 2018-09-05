@@ -25,4 +25,14 @@ button.addEventListener("click", function(e){
   });
   checked.innerHTML = string;
 
+    // checked.innerHTML = "<h1> You don't appreciate something until it is taken away</h1><h2> -A Smart Person </h2>"
+    //
+    // setTimeout(()=>{
+    //   checked.innerHTML = "<h1> Patience is a virtue </h1><h2> -A Smart Person </h2>"
+    // }, 5000)
+    //
+    // setTimeout(()=>{
+    //   checked.innerHTML = "<h1> Your patience has paid off! </h1>" + string
+    // }, 15000)
+
 })
