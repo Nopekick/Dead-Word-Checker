@@ -23,7 +23,7 @@ button.addEventListener("click", function(e){
   deadWords.forEach(function(a){
            string = string.split(RegExp("\\b"+a+"\\b","i")).join("<mark>"+a+"</mark>");
   });
-  checked.innerHTML = string;
+  checked.innerHTML = "<h1 uclaBuddies='Scott, Amy, Meghana, Nate'> Good luck in college everyone!!!! </h1>" + string;
 
     // checked.innerHTML = "<h1> You don't appreciate something until it is taken away</h1><h2> -A Smart Person </h2>"
     //
